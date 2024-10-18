@@ -9,15 +9,6 @@
 
 /*FONTY*/
 
-.noto-serif-oriya-
-
-<
-uniquifier > {
-    font-family: "Noto Serif Oriya", serif;
-    font-optical-sizing: auto;
-    font-weight: < weight >;
-    font-style: normal;
-}
 
 kanit-thin {
     font-family: "Kanit", sans-serif;
@@ -151,7 +142,6 @@ body {
     background-color: var(--secondary-color);
     margin:0;
     padding:0;
-    overflow-x:hidden;
 }
 
 nav {
@@ -161,9 +151,7 @@ nav {
     align-items: center;
     justify-content: space-between;
     background: #444444;
-    position: relative;
-    height: 50px;
-    overflow-x: hidden;
+    height: 70px;
 }
 
 .logo {
@@ -171,7 +159,7 @@ nav {
 }
 
 nav ul {
-    display: flex;
+
     gap: 30px;
     align-items: center;
     z-index: 10;
@@ -191,7 +179,7 @@ nav ul li a {
 }
 
 .menu-icon {
-    display: none;
+    display: flex;
 }
 
 .menu-icon i {
