@@ -144,45 +144,42 @@ body {
     padding:0;
 }
 
-nav {
-    padding-left: var(--padding-left-desktop);
-    padding-right: var(--padding-right-desktop);
+nav{
+    padding: 10px 30px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: #444444;
+    background: var(--secondary-color);
+    position: relative;
     height: 70px;
 }
 
-.logo {
+.logo{
     color: #fff;
 }
 
-nav ul {
-
+nav ul{
+    display: flex;
     gap: 30px;
     align-items: center;
-    z-index: 10;
 }
 
-li a i {
-    color: white;
-}
-
-nav ul li {
+nav ul li{
     list-style-type: none;
 }
 
-nav ul li a {
+nav ul li a{
     text-decoration: none;
-    color: var(--primary-color);
+    color: #fff;
+}
+li a i{
+    color: #fff;
+}
+.menu-icon{
+    display: none;
 }
 
-.menu-icon {
-    display: flex;
-}
-
-.menu-icon i {
+.menu-icon i{
     color: #fff;
     font-size: 30px;
 }
@@ -270,7 +267,7 @@ nav ul li a {
         right: 0;
         flex-direction: column;
         text-align: center;
-        background: #444444;
+        background: var(--secondary-color);
         gap: 0;
         overflow: hidden;
     }
