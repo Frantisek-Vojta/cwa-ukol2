@@ -1,0 +1,423 @@
+:root {
+    --primary-color: #ffffff;
+    --secondary-color: #101010;
+    --padding-left-mobil: 7%;
+    --padding-right-mobil: 15%;
+    --padding-left-desktop: 10%;
+    --padding-right-desktop: 10%;
+}
+
+/*FONTY*/
+
+.noto-serif-oriya-
+
+<
+uniquifier > {
+    font-family: "Noto Serif Oriya", serif;
+    font-optical-sizing: auto;
+    font-weight: < weight >;
+    font-style: normal;
+}
+
+kanit-thin {
+    font-family: "Kanit", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.kanit-extralight {
+    font-family: "Kanit", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.kanit-light {
+    font-family: "Kanit", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.kanit-regular {
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.kanit-medium {
+    font-family: "Kanit", sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    line-height: 1;
+}
+
+.kanit-semibold {
+    font-family: "Kanit", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+.kanit-bold {
+    font-family: "Kanit", sans-serif;
+    font-weight: 700;
+    font-style: normal;
+}
+
+.kanit-extrabold {
+    font-family: "Kanit", sans-serif;
+    font-weight: 800;
+    font-style: normal;
+}
+
+.kanit-black {
+    font-family: "Kanit", sans-serif;
+    font-weight: 900;
+    font-style: normal;
+}
+
+.kanit-thin-italic {
+    font-family: "Kanit", sans-serif;
+    font-weight: 100;
+    font-style: italic;
+}
+
+.kanit-extralight-italic {
+    font-family: "Kanit", sans-serif;
+    font-weight: 200;
+    font-style: italic;
+}
+
+.kanit-light-italic {
+    font-family: "Kanit", sans-serif;
+    font-weight: 300;
+    font-style: italic;
+}
+
+.kanit-regular-italic {
+    font-family: "Kanit", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.kanit-medium-italic {
+    font-family: "Kanit", sans-serif;
+    font-weight: 500;
+    font-style: italic;
+}
+
+.kanit-semibold-italic {
+    font-family: "Kanit", sans-serif;
+    font-weight: 600;
+    font-style: italic;
+}
+
+.kanit-bold-italic {
+    font-family: "Kanit", sans-serif;
+    font-weight: 700;
+    font-style: italic;
+}
+
+.kanit-extrabold-italic {
+    font-family: "Kanit", sans-serif;
+    font-weight: 800;
+    font-style: italic;
+}
+
+.kanit-black-italic {
+    font-family: "Kanit", sans-serif;
+    font-weight: 900;
+    font-style: italic;
+}
+
+.kanit-thin {
+    font-family: "Kanit", sans-serif;
+    font-weight: 100;
+    font-style: normal;
+}
+
+.kanit-extralight {
+    font-family: "Kanit", sans-serif;
+    font-weight: 200;
+    font-style: normal;
+}
+
+.kanit-light {
+    font-family: "Kanit", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+
+body {
+    background-color: var(--secondary-color);
+    margin:0;
+    padding:0;
+    overflow-x:hidden;
+}
+
+nav {
+    padding-left: var(--padding-left-desktop);
+    padding-right: var(--padding-right-desktop);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #444444;
+    position: relative;
+    height: 50px;
+    overflow-x: hidden;
+}
+
+.logo {
+    color: #fff;
+}
+
+nav ul {
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    z-index: 10;
+}
+
+li a i {
+    color: white;
+}
+
+nav ul li {
+    list-style-type: none;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: var(--primary-color);
+}
+
+.menu-icon {
+    display: none;
+}
+
+.menu-icon i {
+    color: #fff;
+    font-size: 30px;
+}
+
+
+@media (min-width: 1025px) {
+    /* desktop */
+    .container {
+        display: flex; /* Flexbox pro uspořádání prvků vedle sebe */
+        width: 100%; /* Šířka kontejneru 100% šířky obrazovky */
+        margin: auto;
+        padding-top: 5%;
+    }
+
+    .obrazek {
+        width: 25%; /* 25% šířky obrazovky pro obrázek */
+        float: right;
+        padding-left: var(--padding-left-desktop);
+        height: 100%;
+        color: var(--primary-color);
+        font-family: "Kanit", sans-serif;
+        font-weight: 100;
+        font-style: normal;
+        padding-top: 4%;
+    }
+
+
+    .text {
+        width: 75%; /* 75% šířky obrazovky pro text */
+        float: right;
+        padding-left: var(--padding-left-desktop);
+        padding-right: var(--padding-right-desktop);
+        color: var(--primary-color);
+        font-size: 85px;
+        height: 100%;
+        padding-top: -4%;
+        margin-top: -4%;
+    }
+
+    .obrazek img {
+        width: auto;
+        height: 300px;
+
+    }
+
+    .pozadi {
+        background-color: #FF8000;
+        padding: 0;
+        margin: 0 1px;
+        border-radius: 2px;
+        display: inline-block;
+        color: var(--secondary-color);
+    }
+
+
+    h1 > .cislo {
+
+        font-size: 30px;
+        vertical-align: super;
+        line-height: 0;
+        margin-left: 3px;
+        top: -30px;
+        position: relative;
+        z-index: 1;
+
+    }
+
+
+
+}
+
+@media (max-width: 767px) {
+    /* mobil */
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        box-sizing: border-box;
+    }
+
+    nav ul {
+        position: absolute;
+        top: 50px;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        text-align: center;
+        background: #444444;
+        gap: 0;
+        overflow: hidden;
+    }
+
+    nav ul li {
+        padding: 20px;
+        padding-top: 0;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    #menuList {
+        transition: all 0.5s;
+    }
+
+    .obrazek {
+        padding-left: var(--padding-left-mobil);
+        padding-right: var(--padding-right-mobil);
+        margin-top: 24px;
+    }
+
+    .obrazek img {
+        margin-top: 24px;
+        width: 80%;
+    }
+
+    h1 {
+        margin-top: 23px;
+        padding-left: var(--padding-left-mobil);
+        font-size: 65px;
+        color: #c9c9c9;
+    }
+
+
+    h1 > .pozadi {
+        background-color: #FF7802;
+        padding: 1px 1px;
+        color: var(--secondary-color);
+    }
+
+    h1 > .cislo {
+
+        font-size: 15px;
+        vertical-align: super;
+        line-height: 0;
+        margin-left: 3px;
+        top: -15px;
+        position: relative;
+        z-index: 1;
+
+    }
+
+    .icon {
+        display: block;
+        padding-top: 7%;
+        padding-left: 7%;
+        max-width: 35px;
+        max-height: 35px;
+        border: 0;
+        background: 0 0;
+    }
+
+    i {
+        color: var(--secondary-color);
+        margin-left: 5px;
+    }
+
+    p > i {
+        color: var(--primary-color);
+    }
+
+    p {
+        color: var(--primary-color);
+        font-size: 15px;
+
+    }
+
+    p > span {
+        color: var(--secondary-color);
+    }
+
+    .mobil1 {
+        padding-top: 5px;
+        font-family: "Kanit", sans-serif;
+        font-weight: 100;
+        font-style: normal;
+
+    }
+
+    .mobil2 {
+        padding-top: 15px;
+        font-family: "Kanit", sans-serif;
+        font-weight: 100;
+        font-style: normal;
+
+    }
+
+    .mobil3 {
+        padding-top: 90px;
+        font-family: "Kanit", sans-serif;
+        font-weight: 100;
+        font-style: normal;
+        font-size: 50px;
+        line-height: 50px;
+        padding-left: var(--padding-left-mobil);
+        padding-right: var(--padding-right-mobil);
+    }
+
+    .mobil4 {
+        padding-top: 30px;
+        font-family: "Kanit", sans-serif;
+        font-weight: 100;
+        font-style: normal;
+        padding-left: var(--padding-left-mobil);
+        padding-right: var(--padding-right-mobil);
+
+    }
+
+    .mobil5 {
+        padding-top: 15px;
+        font-family: "Kanit", sans-serif;
+        font-weight: 100;
+        font-style: normal;
+        padding-left: var(--padding-left-mobil);
+        padding-right: var(--padding-right-mobil);
+    }
+
+    .mobil6 {
+        padding-top: 50px;
+        font-family: "Kanit", sans-serif;
+        font-weight: 100;
+        font-style: normal;
+        padding-left: var(--padding-left-mobil);
+        padding-right: var(--padding-right-mobil);
+    }
+}
