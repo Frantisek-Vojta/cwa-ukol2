@@ -140,11 +140,11 @@ kanit-thin {
 
 body {
     background-color: var(--secondary-color);
-    margin:0;
-    padding:0;
+    margin: 0;
+    padding: 0;
 }
 
-nav{
+nav {
     padding: 10px 30px;
     display: flex;
     align-items: center;
@@ -154,32 +154,37 @@ nav{
     height: 70px;
 }
 
-.logo{
+.logo {
     color: #fff;
 }
 
-nav ul{
+nav ul {
     display: flex;
     gap: 30px;
     align-items: center;
 }
 
-nav ul li{
+nav ul li {
     list-style-type: none;
 }
 
-nav ul li a{
-    text-decoration: none;
+nav ul li a {
+    text-decoration: underline;
     color: #fff;
+    gap: 30px;
 }
-li a i{
+
+li a i {
     color: #fff;
+    gap: 30px;
+    margin-left: 15px;
 }
-.menu-icon{
+
+.menu-icon {
     display: none;
 }
 
-.menu-icon i{
+.menu-icon i {
     color: #fff;
     font-size: 30px;
 }
@@ -248,7 +253,6 @@ li a i{
     }
 
 
-
 }
 
 @media (max-width: 767px) {
@@ -284,11 +288,15 @@ li a i{
     #menuList {
         transition: all 0.5s;
     }
-
+    .container{
+        display: flex;
+        flex-direction: column;
+    }
     .obrazek {
         padding-left: var(--padding-left-mobil);
         padding-right: var(--padding-right-mobil);
         margin-top: 24px;
+        order: 2;
     }
 
     .obrazek img {
@@ -296,10 +304,20 @@ li a i{
         width: 80%;
     }
 
+    .text {
+        width: 75%; /* 75% šířky obrazovky pro text */
+        float: right;
+        padding-left: var(--padding-left-desktop);
+        padding-right: var(--padding-right-desktop);
+        color: var(--primary-color);
+        height: 100%;
+
+        order: 1;
+    }
+
     h1 {
         margin-top: 23px;
-        padding-left: var(--padding-left-mobil);
-        font-size: 65px;
+        font-size: 45px;
         color: #c9c9c9;
     }
 
@@ -318,7 +336,7 @@ li a i{
         margin-left: 3px;
         top: -15px;
         position: relative;
-        z-index: 1;
+        z-index: -1;
 
     }
 
